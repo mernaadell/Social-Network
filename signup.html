@@ -1,0 +1,76 @@
+<?php include('PHP/Register.php') ?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Signup for facebook! </title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+  <link rel="stylesheet" href="css/sign-up.css">
+
+
+</head>
+
+<body>
+
+  <section class="logina-form-wrap">
+    <h1>Facebook</h1>
+    <form class="login-form" action="PHP/signup.php" method="post">
+      <label>
+        <input type="text" name="firstName" required placeholder="First Name">
+      </label>
+      <label>
+        <input type="text" name="lastName" required placeholder="Last Name">
+      </label>
+      <label>
+        <input type="text" name="nickName" placeholder="Nick Name">
+      </label>
+      <label>
+        <input type="password" name="Password" required placeholder="Password">
+      </label>
+      <label>
+        <input type="tel" name="phoneNumber" placeholder="Phone">
+      </label>
+      <label>
+        <input type="email" name="Email" required placeholder="Email">
+      </label>
+      <label>
+        <input list="sex-s" name="sex" required placeholder="Sex">
+        <datalist id="sex-s">
+          <option value="Male">
+          <option value="Female">
+          <option value="Not determined">
+        </datalist>
+      </label>
+      <label>
+        <input type="date" name="bday" required placeholder="Birthday">
+      </label>
+      <label style="color:white;">
+        Upload your image!
+        <input type="file" name="pic" accept="image/*">
+      </label>
+      <label>
+        <input type="text" name="homeTown" placeholder="Home Town">
+      </label>
+      <label>
+        <input list="marital" name="status" placeholder="Marital Status">
+        <datalist id="marital">
+          <option value="Single">
+          <option value="Engaged">
+          <option value="Married">
+        </datalist>
+      </label>
+      <label>
+        <textarea rows="4" cols="31" name="me" placeholder="About You." style="margin: 5px auto 0 auto;"></textarea>
+      </label>
+      <input type="submit" value="Register" name="login">
+    </form>
+  </section>
+</body>
+
+</html>
