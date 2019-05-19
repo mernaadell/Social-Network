@@ -14,8 +14,9 @@ if ($conn->connect_error)
     } 
     else
     {
+    	echo "merna";
 
-		if (isset($_POST['login']))
+		if (isset($_POST['signup']))
 		{
 			$firstname=$_POST['firstName'];
 			$lastname=$_POST['lastName'];
@@ -28,10 +29,15 @@ if ($conn->connect_error)
 			$birtdate=$_POST['bday'];
 			$aboutme=$_POST['me'];
 			$mstatus=$_POST['status'];
+			if($nickname=="")
+			{
+				$nickname=$firstname.$lastname;
+			}
 			// $image=$_FILES['pic']['name'];
 			// $filetempname=$_FILES['pic']['tmpname'];
 			// $folder='uploadedimages/';
-			//move_uploaded_file($filetempname, $folder.$filename);
+			//move_uploaded_file($fsiletempname, $folder.$filename);
+			echo "merna";
 			$sql="INSERT INTO user(`first_name`, `last_name`, `nick_name`, `pass_word`, `user_email`, `phone_number`, `home_town`, `about_me`, `user_status`, `birth_date`, `user_gender`, `user_image`)VALUES('$firstname','$lastname','$nickname','$password','$email','$phone','$hometown','$aboutme','$mstatus','$birtdate','$gender','$')";
 			$qry=mysqli_query($conn,$sql);
 			if($qry){
@@ -48,3 +54,5 @@ if ($conn->connect_error)
 }
 
 ?>
+
+
