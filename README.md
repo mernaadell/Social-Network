@@ -36,5 +36,5 @@ Implementing those features. Each user profile must have the following fields.
 ● About me.
 
 # Note
-This project is done for Database class (Spring 2019) with @Mernaadell (https://github.com/mernaadell) using PHP / HTML / CSS and JS/AJAX.
+This project is done for Database class (Spring 2019) using PHP / HTML / CSS and JS/AJAX.
 
