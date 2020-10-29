@@ -35,6 +35,15 @@ Implementing those features. Each user profile must have the following fields.
 
 ● About me.
 
+# Stage III: Browsing Friends and Send or Accept Friend requests:
+User should be able to add someone to his/her friend list. By sending friendship request to a buddy, this
+buddy should view the friendship requests that he/she has got in a place with the number of friend requests. Notes:
+### a. It's not required to have real time notification.
+### b. The friend requests number should be viewed in all screens. With a link to page having list of
+friend requests to accept/ reject them. c. Each user has a button “Friends” that will navigate to friends’ page and will list all friends for
+logged in user. Friends’ names will be hyperlinked so clicking on any friend’s name will navigate to
+his profile. 
+
 # Note
 This project is done for Database class (Spring 2019) using PHP / HTML / CSS and JS/AJAX.
 
