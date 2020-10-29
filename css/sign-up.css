@@ -19,7 +19,7 @@ body {
   box-shadow: 0 1px #5670A4 inset, 0 0 10px 5px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   width: 360px;
-  height: 800px;
+  height: 900px;
   margin: 60px auto;
   padding: 50px 30px 0 30px;
   text-align: center;
@@ -43,7 +43,7 @@ body {
   font-weight: 400;
   font-family: 'Lato', sans-serif;
   cursor: pointer;
-  margin: 5px auto 0 auto;
+  margin-bottom: 10px;
 }
 .login-form input[type="email"] {
   border-bottom: none;

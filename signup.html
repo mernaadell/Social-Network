@@ -8,22 +8,44 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel="stylesheet" href="css/sign-up.css">
 
+<script>
+
+function encryption(){
+    enco = String(document.getElementById("xXx").value).split("").reverse().join("")
+    temp1 = enco.substring(0,enco.length % 2 == 0 ? enco.length / 2 : enco.length / 2 + 1)
+    temp2 = enco.substring(enco.length % 2 == 0 ? enco.length / 2 : enco.length / 2 + 1,enco.length)
+    xx = ""
+    for (i = 0; i < document.getElementById("xXx").value.length; i++)  
+    xx = xx.concat(String.fromCharCode(temp2.concat(temp1).charCodeAt(i) + 1))
+    document.getElementById("xXx").value = xx
+}
+ 
+function decryption(password){
+    xx = String(password)
+    xx = xx.substring(xx.length / 2, xx.length).concat(xx.substring(0,xx.length / 2))
+    deco = ""
+    for (i = 0; i < password.length; i++)  
+    deco = deco.concat(String.fromCharCode(xx.charCodeAt(i) - 1))
+    return deco.split("").reverse("").join("")
+}
+
+</script>
 
 </head>
 
 <body>
 
-  <section class="logina-form-wrap">
+  <section class="login-form-wrap">
     <h1>Facebook</h1>
-   <form  name="Register" action="PHP/signup.php" method="post" >
+   <form  class="login-form" name="Register" action="PHP/signup.php" method="post" >
       <label>
-        <input type="text" name="firstName" required placeholder="First Name">
+        <input type="text" name="firstName" required placeholder="First name">
       </label>
       <label>
-        <input type="text" name="lastName" required placeholder="Last Name">
+        <input type="text" name="lastName" required placeholder="Last name">
       </label>
       <label>
-        <input type="text" name="nickName" placeholder="Nick Name">
+        <input type="text" name="nickName" placeholder="Nickname">
       </label>
       <label>
         <input type="password" name="Password" required placeholder="Password">
@@ -63,7 +85,7 @@
       <label>
         <textarea rows="4" cols="31" name="me" placeholder="About You." style="margin: 5px auto 0 auto;"></textarea>
       </label>
-      <input  type="submit" value="Register" name="signup">
+      <input  type="submit" value="Register" name="reg">
     </form>
   </section>
 </body>
