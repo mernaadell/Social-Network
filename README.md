@@ -43,7 +43,8 @@ buddy should view the friendship requests that he/she has got in a place with th
 friend requests to accept/ reject them. c. Each user has a button “Friends” that will navigate to friends’ page and will list all friends for
 logged in user. Friends’ names will be hyperlinked so clicking on any friend’s name will navigate to
 his profile. 
-
+# Database
+![mm](https://user-images.githubusercontent.com/31679900/97645377-7c9ae380-1a55-11eb-80f0-26f2f5c3f449.png)
 # Note
 This project is done for Database class (Spring 2019) using PHP / HTML / CSS and JS/AJAX.
 
