@@ -46,7 +46,7 @@ his profile.
 # My Design For Database
 ![mm](https://user-images.githubusercontent.com/31679900/97645377-7c9ae380-1a55-11eb-80f0-26f2f5c3f449.png)
 # Demo for the Website
-<br> ![simplescreenrecorder-2020-10-30 (2)](https://user-images.githubusercontent.com/31679900/97654364-69930e00-1a6b-11eb-8e22-6467cd933026.gif)
+<br> ![simplescreenrecorder-2020-10-30 (2)](https://user-images.githubusercontent.com/31679900/97654364-69930e00-1a6b-11eb-8e22-6467cd933026.gi)
 # Note
 This project is done for Database class (Spring 2019) using PHP / HTML / CSS and JS/AJAX.
 
